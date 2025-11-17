@@ -1,6 +1,5 @@
 //FONTS
 // ici sont chargés les fonts
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 // TOOLS
@@ -28,6 +27,7 @@
 // COMPONENTS
 // Composants d'interface utilisateur spécifiques.
 // C’est là que la majorité de notre travail a lieu.
+@import '../../node_modules/swiper/swiper-bundle';
 @import 'components/icons';
 @import 'components/header';
 @import 'components/hero';
