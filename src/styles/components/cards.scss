@@ -1,0 +1,44 @@
+.cards {
+    @media (width <= $breakpoint-md) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: var(--spacing-md);
+    }
+    @media (width <= $breakpoint-sm) {
+        display: block;
+    }
+}
+
+.card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-md);
+    align-items: center;
+
+    &:nth-child(even) {
+        .card__content {
+            order: -1;
+        }
+    }
+
+    @media (width <= $breakpoint-md) {
+        display: block;
+        &:nth-child(even) {
+            .card__content {
+                order: unset;
+            }
+        }
+    }
+}
+.card__media {
+    aspect-ratio: 595/490;
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 25px;
+        display: block;
+    }
+}
+.card__content {
+}
