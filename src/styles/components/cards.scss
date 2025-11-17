@@ -1,4 +1,7 @@
 .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     @media (width <= $breakpoint-md) {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -41,4 +44,32 @@
     }
 }
 .card__content {
+    h3 {
+        font-weight: 600;
+        font-size: var(--font-size-h3);
+        font-family: var(--font-secondary);
+        text-transform: uppercase;
+    }
+    p {
+        font-size: var(--font-size-content);
+        font-family: var(--font-secondary);
+    }
+    .tag {
+        font-size: typo(18px);
+        font-family: var(--font-secondary);
+        font-weight: 200;
+    }
+    .button a {
+        background-color: var(--color-primary);
+        padding: 8px 16px;
+        color: var(--color-black);
+        border-radius: 100px;
+        font-weight: bold;
+        font-size: typo(16px);
+        font-family: var(--font-secondary);
+        text-decoration: none;
+        &:hover {
+            background-color: var(--color-white);
+        }
+    }
 }
