@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 50px;
     padding-bottom: 80px;
-
+    gap: var(--spacing-md);
     @media (width <= $breakpoint-md) {
         display: grid;
         grid-template-columns: 1fr 1fr;

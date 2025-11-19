@@ -1,0 +1,21 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    .icons{
+        display: flex;
+        gap: 56px;
+        .icon{
+            height: 48px;
+            width: 48px;
+        }
+    }
+    h1{
+        color: var(--color-white);
+    }
+    p{
+        font-size: #{typo(18px)};
+    }
+}
